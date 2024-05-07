@@ -95,7 +95,7 @@ const Send = () => {
     });
   };
 
-  const handleSaveButton = () => {
+  const handleSaveBtn = () => {
     console.log("제목: ", title);
     console.log("내용: ", content);
   };
@@ -119,7 +119,7 @@ const Send = () => {
         value={content}
         onChange={onChange}
       ></ContentBox>
-      <SaveBtn onClick={handleSaveButton}>전송하기</SaveBtn>
+      <SaveBtn onClick={handleSaveBtn}>전송하기</SaveBtn>
     </Container>
   );
 };

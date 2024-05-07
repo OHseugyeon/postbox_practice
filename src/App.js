@@ -1,11 +1,15 @@
 import { Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
 import Send from "./pages/Send";
-import data from "./pages/data.json";
+import data from "./data.json";
 
 function App() {
-  const dataList = data;
+  const [dataList, setDataList] = useState([]);
+  useEffect(() => {
+    setDataList(data);
+  }, []);
 
   return (
     <>
